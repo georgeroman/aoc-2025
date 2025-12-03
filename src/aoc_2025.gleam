@@ -1,5 +1,5 @@
-import aoc_2025/day2
+import aoc_2025/day3
 
 pub fn main() {
-    day2.run()
+    day3.run()
 }

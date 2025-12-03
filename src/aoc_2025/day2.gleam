@@ -17,7 +17,7 @@ pub fn run() {
   |> list.flatten
 
   // Part 1
-  let sum = list.map(all_ids, fn(id) {
+  let assert Ok(sum) = list.map(all_ids, fn(id) {
     let raw_id = int.to_string(id)
     let length = string.length(raw_id)
     let left = string.drop_end(raw_id, length / 2)
@@ -31,7 +31,7 @@ pub fn run() {
   let _ = echo sum
 
   // Part 2
-  let sum = list.map(all_ids, fn(id) {
+  let assert Ok(sum) = list.map(all_ids, fn(id) {
     let raw_id = int.to_string(id)
     let length = string.length(raw_id)
 
